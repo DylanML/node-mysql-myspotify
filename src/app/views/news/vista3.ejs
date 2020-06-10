@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>REPORTE DATOS USUARIOS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-6 mt-4 text-center">
+            <table class="table table-striped table-bordered">
+                <tr>
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>PAIS</th>
+                </tr>
+                <% for (var i = 0; i < vista3.length; i ++) { %>
+                    <tr>
+                        <td><%= vista3[i].id_usuario %></td>
+                        <td><%= vista3[i].nombre_usuario %></td>
+                        <td><%= vista3[i].pais %></td>
+                    </tr>
+                    <% } %>
+            </table>
+        </div>
+</body>
+</html>
